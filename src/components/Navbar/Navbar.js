@@ -20,6 +20,26 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
+    const [homeClick, setHomeClick] = useState(false);
+    const [servicesClick, setServicesClick] = useState(false);
+    const [productsClick, setProductsClick] = useState(false);
+
+    const handleHomeClick = () => {
+        setHomeClick(true);
+        setProductsClick(false);
+        setServicesClick(false);
+    }
+    const handleServicesClick = () => {
+        setHomeClick(false);
+        setProductsClick(false);
+        setServicesClick(true);
+    }
+    const handleProductsClick = () => {
+        setHomeClick(false);
+        setProductsClick(true);
+        setServicesClick(false);
+    }
+
     const handleClick = () =>  setClick(!click);
     
     const closeMobileMenu = () => setClick(false);
@@ -52,22 +72,22 @@ function Navbar() {
                         {click ? <FaTimes /> : <FaBars />}
                     </HamburgerIcon>
                     <NavMenu onClick={handleClick} click={click} >
-                        <NavItem>
-                            <NavLinks to='/'>
+                        <NavItem onClick={handleHomeClick} homeClick={homeClick}>
+                            <NavLinks to='/' onClick={closeMobileMenu}>
                                 Home
                             </NavLinks>
                         </NavItem>
                     
                     
-                        <NavItem>
-                            <NavLinks to='/'>
+                        <NavItem onClick={handleServicesClick} servicesClick={servicesClick}>
+                            <NavLinks to='/services' onClick={closeMobileMenu}>
                                 Services
                             </NavLinks>
                         </NavItem>
                     
                     
-                        <NavItem>
-                            <NavLinks to='/Products'>
+                        <NavItem onClick={handleProductsClick} productsClick={productsClick}>
+                            <NavLinks to='/Products' onClick={closeMobileMenu}>
                                 Products
                             </NavLinks>
                         </NavItem>

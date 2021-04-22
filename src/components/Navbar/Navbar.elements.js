@@ -57,6 +57,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
+    
   
     @media screen and (max-width: 960px) {
         display: flex;
@@ -74,9 +75,10 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     height: 80px;
     border-bottom: 2px solid transparent;
+    border-radius: 2px;
 
     &:hover {
-        border-bottom: 6px solid #fff;
+        border-bottom: 4px solid #fff;
     }
 
     @media screen and (max-width: 960px) {
@@ -96,6 +98,7 @@ export const NavLinks = styled(Link)`
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    
 
     @media screen and (max-width: 960px) {
         text-align: center;

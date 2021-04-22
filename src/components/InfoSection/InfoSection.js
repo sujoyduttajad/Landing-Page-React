@@ -3,7 +3,7 @@ import {InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, I
 import { Container, Button } from '../../globalStyles'
 import { Link } from 'react-router-dom'
 
-export const InfoSection = ({ 
+ const InfoSection = ({ 
     
     primary,
     lightBg,
@@ -48,3 +48,4 @@ export const InfoSection = ({
     )
 }
 
+export default InfoSection;
