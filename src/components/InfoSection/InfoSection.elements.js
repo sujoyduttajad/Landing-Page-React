@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const InfoSec = styled.div`
     color: #fff;
     padding: 160px 0;
-    height: 100vh;
     background: ${({lightBg}) => (lightBg ? '#fff' : '#101522')};
 `
 
@@ -23,10 +22,19 @@ export const InfoColumn = styled.div`
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
-  @media screen and (max-width: 768px) {
+
+  @media (min-width: 480px) and (max-width: 1200px) {
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 `;
@@ -35,8 +43,13 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
-  @media screen and (max-width: 768px) {
+
+  @media (min-width: 480px) and (max-width: 1200px) {
     padding-bottom: 65px;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding-bottom: 65px;  
   }
 `;
 
