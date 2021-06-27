@@ -18,7 +18,6 @@ The only challenge I faced is using styled-components, it was intimidating at fi
 
 # Screenshot
 <img src="./UltraDesktop.png" alt="the screenshot of the app large screen"/>
-<img src="./UltraIPad.png" alt="the screenshot of the app large screen"/>
 <img src="./UltraIPhone.png" alt="the screenshot of the app large screen"/>
 
 # Credits
