@@ -29,6 +29,9 @@ import {
 } from './Footer.elements';
 
 function Footer() {
+
+  const date = new Date();
+
   return (
     <FooterContainer>
       <FooterSubscription>
@@ -82,7 +85,7 @@ function Footer() {
             <SocialIcon />
             ULTRA
           </SocialLogo>
-          <WebsiteRights>ULTRA © 2020</WebsiteRights>
+          <WebsiteRights>ULTRA © {date.getFullYear()} </WebsiteRights>
           <SocialIcons>
             <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
               <FaFacebook />
