@@ -1,4 +1,4 @@
-# Product Landing Page with React
+# Product Landing Page Template
 
 This gorgeous responsive website is a static landing page built with React, styled-components, react-router, and react hooks. All the components are reusable and can be used for any dynamic content. It's fully responsive for all the platforms and hosted using Netlify
 
