@@ -60,10 +60,10 @@ export const ImgWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
-  font-size: 18px;
+  color: ${({ lightTopLine }) => (lightTopLine ? "#99ddcc" : "#99ddcc")};
+  font-size: 24px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
 `;

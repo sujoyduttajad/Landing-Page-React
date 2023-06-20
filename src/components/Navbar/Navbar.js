@@ -2,17 +2,18 @@ import React, {useState, useEffect} from 'react'
 import { Nav, 
     NavbarContainer, 
     NavLogo, 
-    NavIcon, 
     HamburgerIcon,
     NavMenu,
     NavItem,
     NavLinks,
     NavItemBtn,
-    NavBtnLink
+    NavBtnLink,
+    Logo
  } from './Navbar.elements'
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib'
 import { Button } from '../../globalStyles';
+import logoSrc from "../../images/logo.svg";
 
 
 function Navbar() {
@@ -29,11 +30,7 @@ function Navbar() {
         setProductsClick(false);
         setServicesClick(false);
     }
-    const handleServicesClick = () => {
-        setHomeClick(false);
-        setProductsClick(false);
-        setServicesClick(true);
-    }
+  
     const handleProductsClick = () => {
         setHomeClick(false);
         setProductsClick(true);
@@ -60,56 +57,51 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
     return (
-        <>
-        <IconContext.Provider value={{ color: '#fff' }}>
-            <Nav>
-                <NavbarContainer>
-                    <NavLogo to='/'> 
-                        <NavIcon />
-                            ULTRA
-                    </NavLogo>
-                    <HamburgerIcon onClick={handleClick}>
-                        {click ? <FaTimes /> : <FaBars />}
-                    </HamburgerIcon>
-                    <NavMenu onClick={handleClick} click={click} >
-                        <NavItem onClick={handleHomeClick} homeClick={homeClick}>
-                            <NavLinks to='/' onClick={closeMobileMenu}>
-                                Home
-                            </NavLinks>
-                        </NavItem>
-                    
-                    
-                        <NavItem onClick={handleServicesClick} servicesClick={servicesClick}>
-                            <NavLinks to='/services' onClick={closeMobileMenu}>
-                                Services
-                            </NavLinks>
-                        </NavItem>
-                    
-                    
-                        <NavItem onClick={handleProductsClick} productsClick={productsClick}>
-                            <NavLinks to='/Products' onClick={closeMobileMenu}>
-                                Products
-                            </NavLinks>
-                        </NavItem>
+      <>
+        <IconContext.Provider value={{ color: "#fff" }}>
+          <Nav>
+            <NavbarContainer>
+              <NavLogo to="/">
+                <Logo src={logoSrc} />
+              </NavLogo>
+              <HamburgerIcon onClick={handleClick}>
+                {click ? <FaTimes /> : <FaBars />}
+              </HamburgerIcon>
+              <NavMenu onClick={handleClick} click={click}>
+                <NavItem onClick={handleHomeClick} homeClick={homeClick}>
+                  <NavLinks to="/" onClick={closeMobileMenu}>
+                    Home
+                  </NavLinks>
+                </NavItem>
 
-                        <NavItemBtn >
-                            {button ? (
-                                <NavBtnLink to='/sign-up'>
-                                    <Button primary>SIGN UP</Button>
-                                </NavBtnLink>
-                            ) : (
-                                <NavBtnLink to='/sign-up'>
-                                    <Button onClick={closeMobileMenu} fontBig primary>SIGN UP</Button>
-                                </NavBtnLink>
-                            )}
-                            
-                        </NavItemBtn>
-                    </NavMenu>
-                </NavbarContainer>
-            </Nav>
-        </IconContext.Provider>    
-        </>
-    )
+                <NavItem
+                  onClick={handleProductsClick}
+                  productsClick={productsClick}
+                >
+                  <NavLinks to="/Products" onClick={closeMobileMenu}>
+                    Products
+                  </NavLinks>
+                </NavItem>
+
+                <NavItemBtn>
+                  {button ? (
+                    <NavBtnLink to="/sign-up">
+                      <Button primary>SIGN UP</Button>
+                    </NavBtnLink>
+                  ) : (
+                    <NavBtnLink to="/sign-up">
+                      <Button onClick={closeMobileMenu} fontBig primary>
+                        SIGN UP
+                      </Button>
+                    </NavBtnLink>
+                  )}
+                </NavItemBtn>
+              </NavMenu>
+            </NavbarContainer>
+          </Nav>
+        </IconContext.Provider>
+      </>
+    );
 }
 
 export default Navbar
