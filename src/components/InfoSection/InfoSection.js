@@ -29,7 +29,13 @@ import { Link } from 'react-router-dom'
                             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                            <Link to='/sign-up'>
+                            <Link
+                      to={{
+                        pathname:
+                          "https://chrome.google.com/webstore/detail/discountly/gnocblmhdddbhhdijfdnloldcbnhhign",
+                      }}
+                      target="_blank"
+                    >
                             <Button big fontBig primary={primary}>
                                 {buttonLabel}
                             </Button>

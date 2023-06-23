@@ -22,19 +22,9 @@ function Navbar() {
     const [button, setButton] = useState(true);
 
     const [homeClick, setHomeClick] = useState(false);
-    const [servicesClick, setServicesClick] = useState(false);
-    const [productsClick, setProductsClick] = useState(false);
 
     const handleHomeClick = () => {
         setHomeClick(true);
-        setProductsClick(false);
-        setServicesClick(false);
-    }
-  
-    const handleProductsClick = () => {
-        setHomeClick(false);
-        setProductsClick(true);
-        setServicesClick(false);
     }
 
     const handleClick = () =>  setClick(!click);
@@ -74,26 +64,25 @@ function Navbar() {
                   </NavLinks>
                 </NavItem>
 
-                <NavItem
-                  onClick={handleProductsClick}
-                  productsClick={productsClick}
-                >
-                  <NavLinks to="/Products" onClick={closeMobileMenu}>
-                    Products
-                  </NavLinks>
-                </NavItem>
-
                 <NavItemBtn>
                   {button ? (
-                    <NavBtnLink to="/sign-up">
+                    <NavBtnLink
+                      to={{
+                        pathname:
+                          "https://chrome.google.com/webstore/detail/discountly/gnocblmhdddbhhdijfdnloldcbnhhign",
+                      }}
+                      target="_blank"
+                    >
                       <Button primary>SIGN UP</Button>
                     </NavBtnLink>
                   ) : (
-                    <NavBtnLink to="/sign-up">
-                      <Button onClick={closeMobileMenu} fontBig primary>
-                        SIGN UP
-                      </Button>
-                    </NavBtnLink>
+                    <NavBtnLink
+                      to={{
+                        pathname:
+                          "https://chrome.google.com/webstore/detail/discountly/gnocblmhdddbhhdijfdnloldcbnhhign",
+                      }}
+                      target="_blank"
+                    ></NavBtnLink>
                   )}
                 </NavItemBtn>
               </NavMenu>

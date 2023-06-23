@@ -40,7 +40,7 @@ export const homeObjOne = {
     lightText: false,
     lightTextDesc: false,
     topLine: "Shielding You from Malicious Sites",
-    headline: "Say goodbye to deceptive dropshipping websites!",
+    headline: "Never worry about deceptive dropshipping websites!",
     description:
       "Our extension works tirelessly in the background, automatically detecting and protecting you from malicious dropshipping websites. Say goodbye to scams and deceptive practices. Discountly has your back, ensuring a safe shopping experience every time.",
     buttonLabel: "Learn More",
@@ -55,14 +55,14 @@ export const homeObjOne = {
     lightBg: true,
     lightTopLine: false,
     lightText: false,
-    lightTextDesc: true,
-    topLine: 'Secure Database',
-    headline: 'All your data is stored on our secure server',
+    lightTextDesc: false,
+    topLine: "",
+    headline: "Shop from Verified and Reliable Sources",
     description:
-      'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
-    buttonLabel: 'Sign Up Now',
-    imgStart: 'start',
-    img: require('../../images/svg-3.svg'),
-    alt: 'Vault',
-    start: 'true'
+      "Discountly only sources product information from reputable and trusted platforms, such as Amazon. You can be confident that the deals and savings you discover through Discountly are genuine and reliable",
+    buttonLabel: "Sign Up Now",
+    imgStart: "start",
+    img: require("../../images/svg-3.svg"),
+    alt: "Vault",
+    start: "true",
   };
