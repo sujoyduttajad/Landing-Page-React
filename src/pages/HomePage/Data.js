@@ -23,7 +23,7 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: "Instant Setup",
-    headline: "Extremely quick onboarding process",
+    headline: "Its as simple as a single click",
     description:
       "No complex setup or technical know-how required. Within moments, you'll be ready to take advantage of the incredible benefits Discountly has to offer.",
     buttonLabel: "Learn More",
