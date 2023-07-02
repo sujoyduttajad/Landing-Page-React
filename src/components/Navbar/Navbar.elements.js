@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
   background: #101522;
-  height: 120px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,8 +35,8 @@ export const NavLogo = styled(Link)`
 
 
 export const Logo = styled.img`
-  width: 360px;
-  height: 120px;
+  width: 240px;
+  height: 80px;
 `;
 
 export const NavIcon = styled(FaTag)`

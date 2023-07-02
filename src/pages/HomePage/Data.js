@@ -5,13 +5,12 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: "Supercharge Your Online Shopping Experience!",
-  headline:
-    "Say goodbye to overpaying and hello to smarter savings and enhanced discovery",
+  headline: "Elevate your online shopping experience with the power of AI",
   description:
-    "Don't let malicious websites trick you or compromise your online shopping. Discountly is here to protect you while helping you discover great savings like never before.",
+    "Say goodbye to tedious price comparisons and hunting for deals. Discountly's intelligent search algorithm scours the web, locating discounted items related to your shopping interests.",
   buttonLabel: "Learn More",
   imgStart: "",
-  img: require("../../images/dropshipping-icon.svg"),
+  img: require("../../images/1.png"),
   alt: "Online Shopping",
   start: "",
 };
@@ -22,13 +21,13 @@ export const homeObjOne = {
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: "Instant Setup",
-    headline: "Its as simple as a single click",
+    topLine: " Empowering Smart Shopping Decisions",
+    headline: "Compare Prices, Evaluate Quality, Shop with Confidence!",
     description:
-      "No complex setup or technical know-how required. Within moments, you'll be ready to take advantage of the incredible benefits Discountly has to offer.",
+      "Unlock savings and make informed shopping decisions effortlessly with Discountly's intuitive price comparison and quality evaluation features.",
     buttonLabel: "Learn More",
     imgStart: "",
-    img: require("../../images/svg-2.svg"),
+    img: require("../../images/2.png"),
     alt: "Vault",
     start: "",
   };
@@ -45,7 +44,7 @@ export const homeObjOne = {
       "Our extension works tirelessly in the background, automatically detecting and protecting you from malicious dropshipping websites. Say goodbye to scams and deceptive practices. Discountly has your back, ensuring a safe shopping experience every time.",
     buttonLabel: "Learn More",
     imgStart: "start",
-    img: require("../../images/Data_security_28.jpg"),
+    img: require("../../images/3.png"),
     alt: "Graph",
     start: "true",
   };
@@ -56,13 +55,13 @@ export const homeObjOne = {
     lightTopLine: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: "",
-    headline: "Shop from Verified and Reliable Sources",
+    topLine: "Seamless Shopping Convenience",
+    headline: "Effortless Control, Privacy Assured, Save with Ease!",
     description:
-      "Discountly only sources product information from reputable and trusted platforms, such as Amazon. You can be confident that the deals and savings you discover through Discountly are genuine and reliable",
+      "Enjoy a seamless shopping experience with Discountly as it seamlessly integrates into your browsing routine, provides effortless control, prioritizes your privacy, and helps you save money effortlessly.",
     buttonLabel: "Sign Up Now",
     imgStart: "start",
-    img: require("../../images/svg-3.svg"),
+    img: require("../../images/4.png"),
     alt: "Vault",
     start: "true",
   };

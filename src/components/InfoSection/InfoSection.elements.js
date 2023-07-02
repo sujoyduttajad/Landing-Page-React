@@ -2,17 +2,37 @@ import styled from 'styled-components';
 
 
 export const InfoSec = styled.div`
-    color: #fff;
-    padding: 160px 0;
-    background: ${({lightBg}) => (lightBg ? '#fff' : '#101522')};
-`
+  color: #fff;
+  padding: 160px 0;
+  background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
+`;
+
+// export const BackgroundHighlight = styled.div`
+//   background-color: #b0eddf;
+//   position: relative;
+//   top: -15px;
+//   left: ${({ imgStart }) => (imgStart ? "0px" : "-15px")};
+//   right: ${({ imgStart }) => (imgStart ? "-15px" : "0px")};
+//   min-width: 540px;
+//   min-height: 500px;
+//   padding-top: 0;
+//   padding-bottom: 60px;
+
+//   @media (min-width: 480px) and (max-width: 1200px) {
+//     padding-bottom: 65px;
+//   }
+
+//   @media (min-width: 320px) and (max-width: 480px) {
+//     padding-bottom: 65px;
+//   }
+// `;
 
 export const InfoRow = styled.div`
   display: flex;
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
 `;
 
 export const InfoColumn = styled.div`
@@ -54,13 +74,14 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
+  position:relative;
   max-width: 555px;
   display: flex;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#99ddcc" : "#99ddcc")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#017A5E" : "#017A5E")};
   font-size: 24px;
   line-height: 16px;
   font-weight: 900;
@@ -82,7 +103,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
+  color: ${({ lightText }) => (lightText ? "#fff" : "#1c2237")};
 `;
 
 export const Subtitle = styled.p`
@@ -90,5 +111,5 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "D3D3D3" : "#1c2237")};
 `;
