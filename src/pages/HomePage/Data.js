@@ -10,8 +10,8 @@ export const homeObjOne = {
     "Say goodbye to tedious price comparisons and hunting for deals. Discountly's intelligent search algorithm scours the web, locating discounted items related to your shopping interests.",
   buttonLabel: "Learn More",
   imgStart: "",
-  img: require("../../images/1.png"),
-  alt: "Online Shopping",
+  video: require("../../video/Add.mp4"),
+  alt: "Discountly Video",
   start: "",
 };
   
